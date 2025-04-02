@@ -18,5 +18,12 @@
     "url": "https://github.com/SATHWIKP17/backend/issues"
   },
   "homepage": "https://github.com/SATHWIKP17/backend#readme",
-  "description": ""
+  "description": "",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^5.1.0",
+    "http": "^0.0.1-security",
+    "path": "^0.12.7",
+    "socket.io": "^4.8.1"
+  }
 }
