@@ -9,7 +9,7 @@ const server=http.createServer(app);
 const io=new Server(server,{
     cors:{
         origin:'*',
-        methods:['GET']
+        methods:['GET','POST']
     }
 });
 app.use(express.static(path.join(__dirname,"../client/build")));
@@ -32,8 +32,10 @@ io.on("connection", (socket)=>{
 // app.use(express.static(__dirname,"../frontend/build"));
 // app.use(express.json());
 app.post("/",(req,res)=>{
+    res.send("hrllo");
 });
 app.post("/cam",(req,res)=>{
+    res.send("hrllo");
 })
 // app.post("/l",(req,res)=>{
 //     const re=req.body;
