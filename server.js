@@ -5,6 +5,7 @@ const http=require('http');
 const cors=require('cors');
 const {Server}=require('socket.io');
 const server=http.createServer(app);
+const PORT=process.env.PORT || 3010;
 
 const io=new Server(server,{
     cors:{
@@ -47,6 +48,6 @@ app.get("/cam",(req,res)=>{
 // app.listen(3010,"localhost",()=>{
 //     console.log("Sucess");
 // })
-server.listen(3010,"localhost",()=>{
+server.listen(PORT,"localhost",()=>{
     console.log("Success");
 })
