@@ -31,10 +31,10 @@ io.on("connection", (socket)=>{
 });
 // app.use(express.static(__dirname,"../frontend/build"));
 // app.use(express.json());
-app.post("/",(req,res)=>{
+app.get("/",(req,res)=>{
     res.send("hrllo");
 });
-app.post("/cam",(req,res)=>{
+app.get("/cam",(req,res)=>{
     res.send("hrllo");
 })
 // app.post("/l",(req,res)=>{
