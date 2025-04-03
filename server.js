@@ -48,6 +48,4 @@ app.get("/cam",(req,res)=>{
 // app.listen(3010,"localhost",()=>{
 //     console.log("Sucess");
 // })
-server.listen(PORT,"localhost",()=>{
-    console.log("Success");
-})
+server.listen(PORT, () => { console.log(`Server running on port ${PORT}`); });
