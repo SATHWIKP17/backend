@@ -13,7 +13,7 @@ const io=new Server(server,{
         methods:['GET','POST']
     }
 });
-app.use(express.static(path.join(__dirname,"../client/build")));
+//app.use(express.static(path.join(__dirname,"../client/build")));
 app.use(express.json());
 app.use(express.urlencoded({extended:true}));
 // admin.initializeApp({
