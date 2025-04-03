@@ -27,7 +27,7 @@ io.on("connection", (socket)=>{
        socket.broadcast.emit("rec_msg",mess);
     }); 
     socket.on("disconnect",()=>{
-        console.log(`${socket.id}+"Disconnected`  );
+        console.log(`${socket.id} Disconnected`);
     })
 });
 // app.use(express.static(__dirname,"../frontend/build"));
